@@ -19,7 +19,6 @@ public class GFG {
         final_path[N] = curr_path[0];
     }
 
-
     static int firstMin(int[][] adj, int i) {
         int min = Integer.MAX_VALUE;
         for (int k = 0; k < N; k++)
@@ -27,7 +26,6 @@ public class GFG {
                 min = adj[i][k];
         return min;
     }
-
 
     static int secondMin(int[][] adj, int i) {
         int first = Integer.MAX_VALUE, second = Integer.MAX_VALUE;
@@ -44,7 +42,6 @@ public class GFG {
         }
         return second;
     }
-
 
     static void TSPRec(int[][] adj, int curr_bound, int curr_weight, int level, int[] curr_path) {
         if (level == N) {
@@ -86,8 +83,7 @@ public class GFG {
         }
     }
 
-    static void TSP(int[][] adj)
-    {
+    static void TSP(int[][] adj) {
         int[] curr_path = new int[N + 1];
 
         int curr_bound = 0;
